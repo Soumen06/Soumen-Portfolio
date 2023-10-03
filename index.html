@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- -----------custom css--------- -->
+    <link rel="stylesheet" href="style.css">
+    <!-- -------external JS file------- -->
+    <script src="script.js"></script>
+    <!-- ------------font awesome--------- -->
+    <script src="https://kit.fontawesome.com/7c755fc241.js" crossorigin="anonymous"></script>
+
+    <title>Soumen | Porfolio</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="left">
+                    Soumen's Portfolio
+                </div>
+                <div class="right">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </div>
+            </nav>
+            <section class="first">
+                <div class="header-text">
+                    <h1>Hi, I am <br />Soumen <span>Karan</span></h1>
+                    <p>I am into </p>
+                    <!-- ---------typed JS link--------- -->
+                    <span id="element"></span>
+
+                </div>
+                <div class="image">
+                    <img draggable="false" src="Images/hero-img.jpg" alt="">
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- -----------------------about section--------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/IMG_20191127_124333.jpg.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a Computer Science and Engineering undergraduate at Netaji Subhash Engineering College,
+                        graduating in 2024. My passion lies in coding and web development. I aspire to drive innovation
+                        through my confident communication, strategic thinking, and creative problem-solving. Join me on
+                        this exciting journey of crafting software for a successful future.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>Web Designer </span><br />Beginner+<br />Seeking an opportunity to showcase my
+                                skills</li>
+                            <li><span>Internship </span><br />Full Stack Web Development at Internshala<br />Duration ->
+                                21 Jun'23 - 5 Sep'23</li>
+                            <li><span>Internship Certificate - </span><br />
+                                <div class="certificate-btn">
+                                    <a href="https://trainings.internshala.com/s/v/3125048/0df0a6a2"
+                                        target="_blank"><button class="btn">View Certificate</button>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>College - </span><br />Bachelor of Technology in Computer Science and
+                                Engineering<br />Netaji Subhash Engineering College, Kolkata<br />2020-2024 || Pursuing
+                            </li>
+                            <li><span>Higher Secondary Education - </span><br />Tamluk High School || WBCHSE<br />I have
+                                completed my Higher Secondary Examination in the year 2019 and secured 66%
+                                marks<br />Completed</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" download class="btn-btn2"> Download Resume </a>
+    </div>
+    <!-- -------------------------Skills------------------------ -->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skill-list">
+                <div class="skill">
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>HTML</h2>
+                    <p>Experienced</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h2>CSS</h2>
+                    <p>Experienced</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-js"></i>
+                    <h2>JavaScript</h2>
+                    <p>Basic</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <h2>Bootstrap</h2>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-solid fa-database"></i>
+                    <h2>MySQL</h2>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-php"></i>
+                    <h2>PHP</h2>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-react"></i>
+                    <h2>ReactJs</h2>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java</h2>
+                    <p>Basic</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------Projects----------------- -->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="work">
+                    <img src="Images/work-1.jpg">
+                    <div class="layer">
+                        <h3>PG Life Style</h3>
+                        <p> PG Life is a Full-Stack Web Application. This is a project that I was assigned to make
+                            during my Internshala Full Stack Web Development Internship Training. Entire web-app is
+                            fully responsive and is operational from any device.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-2.jpg">
+                    <div class="layer">
+                        <h3>Personal Portfolio</h3>
+                        <p> A responsive personal portfolio website showcases skills and achievements</p>
+                        <a href="##"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ----------------Contact----------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-envelope"></i> soumenkaran61@gmail.com</p>
+                    <p> <i class="fa-solid fa-mobile-screen"></i>+91 8617864927</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/soumen-karan-263b05229/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Soumen06" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn-btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023 Soumen Karan</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+    <!-- --------------------typed JS-------------------- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web</i> Development .', '&amp; Full Stack Development .'],
+            typeSpeed: 60,
+        });
+    </script>
+<!-- -----------------------Contact form gsheet ---------------- -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw8nRAZ4LDGEe9bFHJw8IuvhxkTE8kpGreknFCZDIXmTpgIxOaXmkpHNwzaJVA8r1t0/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg=document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML="Messege send successfully"
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },2000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
